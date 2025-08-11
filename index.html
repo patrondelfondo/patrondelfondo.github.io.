@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tu Consultora — Estrategia, GTM y Crecimiento</title>
-  <meta name="description" content="Consultora boutique: estrategia, go‑to‑market, RevOps, expansión LatAm y fundraising para SaaS y pymes en crecimiento."/>
-  <meta property="og:title" content="Tu Consultora — Estrategia, GTM y Crecimiento" />
-  <meta property="og:description" content="Ejecución GTM, RevOps, reuniones calificadas y expansión en Latinoamérica. Elegancia editorial, enfoque en resultados." />
+  <title>Your Firm — Strategy, GTM & Growth</title>
+  <meta name="description" content="Boutique consulting: strategy, go‑to‑market, RevOps, LatAm expansion and fundraising for SaaS and growing SMBs."/>
+  <meta property="og:title" content="Your Firm — Strategy, GTM & Growth" />
+  <meta property="og:description" content="GTM execution, RevOps, qualified meetings and expansion in Latin America. Editorial elegance, results focus." />
   <meta property="og:type" content="website" />
   <style>
     :root{
@@ -28,12 +28,12 @@
     body{font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial; line-height:1.55}
     h1,h2,h3{font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;letter-spacing:-.01em}
     a{color:inherit;text-decoration:none}
-    .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+    .wrap{max-width:1240px;margin:0 auto;padding:0 28px}
 
     /* Top bar */
     .topbar{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.8);backdrop-filter:saturate(130%) blur(8px);border-bottom:1px solid var(--line)}
     @media (prefers-color-scheme: dark){.topbar{background:rgba(11,15,20,.6)}}
-    .topbar .inner{display:flex;align-items:center;gap:18px;justify-content:space-between;height:64px}
+    .topbar .inner{display:flex;align-items:center;gap:18px;justify-content:space-between;height:64px;max-width:none;margin:0;padding:0 20px}
     .brand{display:flex;align-items:center;gap:10px;font-weight:800}
     .logo{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,var(--brand),var(--brand-2))}
     .nav{display:flex;gap:18px;align-items:center}
@@ -43,11 +43,11 @@
     .cta{padding:8px 12px;border-radius:999px;border:1px solid var(--line)}
 
     /* Hero */
-    .hero{padding:72px 0 36px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 10% -20%, rgba(15,93,163,.06), transparent)}
+    .hero{padding:96px 0 48px;border-bottom:1px solid var(--line);background:radial-gradient(1200px 400px at 10% -20%, rgba(15,93,163,.06), transparent)}
     .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:28px}
     @media (max-width: 900px){.hero-grid{grid-template-columns:1fr}}
     h1{font-size:48px;line-height:1.1;margin:0 0 12px}
-    .lead{font-size:18px;color:var(--muted);max-width:60ch}
+    .lead{font-size:20px;color:var(--muted);max-width:60ch}
     .chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
     .chip{background:var(--chip);border:1px solid var(--line);padding:6px 10px;border-radius:999px;font-size:13px}
 
@@ -57,16 +57,16 @@
     .tabs a.active{color:var(--ink);background:linear-gradient(0deg, rgba(15,93,163,.08), rgba(15,93,163,.08))}
 
     /* Sections */
-    section{padding:42px 0}
+    section{padding:64px 0}
     .section-hd{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:12px}
     h2{font-size:28px;margin:0}
     .muted{color:var(--muted)}
-    .grid{display:grid;gap:16px}
+    .grid{display:grid;gap:24px}
     .cols-3{grid-template-columns:repeat(3,1fr)}
     .cols-2{grid-template-columns:repeat(2,1fr)}
     @media (max-width: 900px){.cols-3,.cols-2{grid-template-columns:1fr}}
 
-    .card{border:1px solid var(--line);border-radius:16px;padding:18px;background:rgba(255,255,255,.6)}
+    .card{border:1px solid var(--line);border-radius:16px;padding:22px;background:rgba(255,255,255,.6)}
     @media (prefers-color-scheme: dark){.card{background:rgba(17,24,39,.35)}}
     .card h3{margin:6px 0 8px;font-size:18px}
     .metric{font-size:32px;font-weight:800}
@@ -88,12 +88,12 @@
   <header class="topbar">
     <div class="wrap inner">
       <div class="brand"><span class="logo"></span><span id="brand">Tu Consultora</span></div>
-      <nav class="nav" aria-label="Principal">
-        <a href="#servicios" class="navlink">Servicios</a>
-        <a href="#casos" class="navlink">Casos</a>
-        <a href="#insights" class="navlink">Insights</a>
-        <a href="#contacto" class="navlink">Contacto</a>
-        <a href="#contacto" class="cta">Agendar intro</a>
+      <nav class="nav" aria-label="Main">
+        <a href="#services" class="navlink">Services</a>
+        <a href="#case-studies" class="navlink">Case Studies</a>
+        <a href="#about" class="navlink">About us</a>
+        <a href="#contact" class="navlink">Contact us</a>
+        <a href="#contact" class="cta">Book intro</a>
       </nav>
     </div>
   </header>
@@ -102,68 +102,72 @@
   <section class="hero" id="inicio">
     <div class="wrap hero-grid">
       <div>
-        <h1>Estrategia y ejecución para crecer con disciplina</h1>
-        <p class="lead">Aceleramos SaaS y pymes con **Go‑To‑Market**, **RevOps** y **generación de demanda**. Abrimos **LatAm** y acompañamos **fundraising** (ángeles, family offices y VC). Elegancia de consultora, foco en *pipeline* y métricas.</p>
+        <h1>Strategy & execution to scale with discipline</h1>
+        <p class="lead">We accelerate SaaS and SMBs with Go‑To‑Market, RevOps and demand generation. We open LatAm and support fundraising (angels, family offices, VCs). Consulting‑grade polish, pipeline and metrics focus.</p>
         <div class="chips">
-          <span class="chip">ICP & Propuesta</span>
-          <span class="chip">Playbooks & Cadencias</span>
+          <span class="chip">ICP & Value Prop</span>
+          <span class="chip">Playbooks & Cadences</span>
           <span class="chip">CRM & Dashboards</span>
           <span class="chip">Partnerships</span>
           <span class="chip">LatAm Entry</span>
           <span class="chip">Fundraising</span>
         </div>
-        <div class="tabs" role="tablist" aria-label="Servicios">
+        <div class="tabs" role="tablist" aria-label="Services">
           <a href="#gtm" class="tab" role="tab">GTM</a>
           <a href="#revops" class="tab" role="tab">RevOps</a>
-          <a href="#reuniones" class="tab" role="tab">Reuniones</a>
+          <a href="#meetings" class="tab" role="tab">Qualified meetings</a>
           <a href="#latam" class="tab" role="tab">LatAm</a>
           <a href="#capital" class="tab" role="tab">Capital</a>
         </div>
       </div>
       <div class="card">
-        <strong>Qué resolvemos</strong>
+        <strong>What we deliver</strong>
         <ul class="list" style="margin-top:10px">
-          <li class="li"><span class="dot"></span><span>Motor comercial repetible: desde ICP a win‑loss.</span></li>
-          <li class="li"><span class="dot"></span><span>Pipeline con reuniones calificadas y ciclos más cortos.</span></li>
-          <li class="li"><span class="dot"></span><span>Gobernanza de ingresos y reporting que ordena decisiones.</span></li>
-          <li class="li"><span class="dot"></span><span>Entrada a Latinoamérica: pricing, canales, compliance.</span></li>
-          <li class="li"><span class="dot"></span><span>Preparación y acceso a capital con narrativas convincentes.</span></li>
+          <li class="li"><span class="dot"></span><span>Repeatable revenue engine: from ICP to win‑loss.</span></li>
+          <li class="li"><span class="dot"></span><span>Pipeline with qualified meetings and shorter cycles.</span></li>
+          <li class="li"><span class="dot"></span><span>Revenue governance and reporting that drive decisions.</span></li>
+          <li class="li"><span class="dot"></span><span>LatAm market entry: pricing, channels, compliance.</span></li>
+          <li class="li"><span class="dot"></span><span>Capital readiness and access with compelling narratives.</span></li>
         </ul>
       </div>
     </div>
   </section>
 
   <!-- Servicios (con anclas para las "pestañas") -->
-  <section id="servicios">
+  <section id="services">
     <div class="wrap">
-      <div class="section-hd"><h2>Servicios</h2><span class="muted">Del plan a la ejecución en 90 días</span></div>
+      <div class="section-hd"><h2>Services</h2><span class="muted">From plan to execution in 90 days</span></div>
       <div class="grid cols-3">
         <article id="gtm" class="card">
           <h3>Go‑To‑Market</h3>
-          <p class="muted">Definimos ICP, propuesta y pricing. Playbooks, cadencias y narrativa de valor. Funnel y KPIs por etapa.</p>
+          <p class="muted">Define ICP, value prop and pricing. Build playbooks, cadences and a clear narrative. Funnel and KPIs by stage.</p>
+        </article>
         </article>
         <article id="revops" class="card">
           <h3>RevOps</h3>
-          <p class="muted">Diseño de procesos, implementación de CRM, gobernanza de datos, dashboards ejecutivos y forecast.</p>
+          <p class="muted">Process design, CRM implementation, data governance, executive dashboards and forecast.</p>
         </article>
-        <article id="reuniones" class="card">
-          <h3>Reuniones calificadas</h3>
-          <p class="muted">Prospección outbound, secuencias y partnerships. Agenda compartida, feedback por llamada y mejoras continuas.</p>
+        </article>
+        <article id="meetings" class="card">
+          <h3>Qualified meetings</h3>
+          <p class="muted">Outbound prospecting, sequences and partnerships. Shared calendar, call feedback and continuous improvement.</p>
         </article>
         <article id="latam" class="card">
-          <h3>Expansión LatAm</h3>
-          <p class="muted">Investigación de mercados, canales y compliance. Playbook de entrada país por país y primeros clientes.</p>
+          <h3>LatAm Expansion</h3>
+          <p class="muted">Market, channels and compliance research. Country‑by‑country entry playbook and first customers.</p>
+        </article>
         </article>
         <article id="capital" class="card">
           <h3>Fundraising</h3>
-          <p class="muted">Ready‑to‑raise: deck, métricas, data room y *target list*. Introducciones a ángeles, family offices y VC.</p>
+          <p class="muted">Ready‑to‑raise: deck, metrics, data room and target list. Introductions to angels, family offices and VCs.</p>
+        </article>
         </article>
         <article class="card">
-          <h3>Paquetes</h3>
+          <h3>Packages</h3>
           <ul class="list">
-            <li class="li"><span class="dot"></span><span><strong>Diagnóstico 360°</strong> — 2 semanas · Quick wins y roadmap 90 días</span></li>
-            <li class="li"><span class="dot"></span><span><strong>GTM Sprint</strong> — 8 semanas · Playbooks, cadencias y primeras reuniones</span></li>
-            <li class="li"><span class="dot"></span><span><strong>RevOps & Reporting</strong> — 6 semanas · CRM + dashboards ejecutivos</span></li>
+            <li class="li"><span class="dot"></span><span><strong>360° Diagnostic</strong> — 2 weeks · Quick wins and 90‑day roadmap</span></li>
+            <li class="li"><span class="dot"></span><span><strong>GTM Sprint</strong> — 8 weeks · Playbooks, cadences and first meetings</span></li>
+            <li class="li"><span class="dot"></span><span><strong>RevOps & Reporting</strong> — 6 weeks · CRM + executive dashboards</span></li>
           </ul>
         </article>
       </div>
@@ -171,87 +175,87 @@
   </section>
 
   <!-- Casos -->
-  <section id="casos">
+  <section id="case-studies">
     <div class="wrap">
-      <div class="section-hd"><h2>Casos</h2><span class="muted">Resultados recientes</span></div>
+      <div class="section-hd"><h2>Case Studies</h2><span class="muted">Recent results</span></div>
       <div class="grid cols-3">
         <article class="card">
           <h3>SaaS B2B · Series A</h3>
           <div class="metric">+62%</div>
-          <p class="muted">Crecimiento en MQL→SQL en 90 días con nueva propuesta, cadencias y *partner program*.</p>
+          <p class="muted">MQL→SQL up in 90 days with new value prop, cadences and a partner program.</p>
         </article>
         <article class="card">
           <h3>Fintech · Seed</h3>
-          <div class="metric">14→41 días</div>
-          <p class="muted">Reducción de ciclo de venta con *discovery*, *mutual action plans* y governance semanal.</p>
+          <div class="metric">14→41 days</div>
+          <p class="muted">Sales cycle reduced with better discovery, mutual action plans and weekly governance.</p>
         </article>
         <article class="card">
           <h3>HR Tech · SMB</h3>
-          <div class="metric">23 reuniones</div>
-          <p class="muted">Pipeline de compradores calificados en 6 semanas (outbound + *ecosystem partners*).</p>
+          <div class="metric">23 meetings</div>
+          <p class="muted">Qualified buyer pipeline in 6 weeks (outbound + ecosystem partners).</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- Insights -->
-  <section id="insights">
+  <!-- About -->
+  <section id="about">
     <div class="wrap">
-      <div class="section-hd"><h2>Insights</h2><span class="muted">Notas breves y frameworks</span></div>
+      <div class="section-hd"><h2>About us</h2><span class="muted">Boutique, hands‑on, outcome‑driven</span></div>
       <div class="grid cols-2">
         <article class="card">
-          <h3>Del pitch al problema: *discovery* que vende</h3>
-          <p class="muted">Cómo pasar de *features* a impacto en el negocio con 5 preguntas que iluminan *pain* y *urgency*.</p>
+          <h3>Who we are</h3>
+          <p class="muted">Operators‑turned‑advisors with B2B SaaS experience in GTM, RevOps and partnerships across the US and Latin America.</p>
         </article>
         <article class="card">
-          <h3>Cadencias que convierten</h3>
-          <p class="muted">Estructura de 15 días, 7 toques, 3 canales. Ejemplos de mensajes y criterios de cualificación.</p>
+          <h3>How we work</h3>
+          <p class="muted">90‑day roadmaps, weekly dashboards and clear ownership. We build repeatable systems and coach your team to run them.</p>
         </article>
         <article class="card">
-          <h3>RevOps: métricas que importan</h3>
-          <p class="muted">Deja de medir todo: 6 KPIs para alinear marketing, ventas y *success* sin ruido.</p>
+          <h3>Principles</h3>
+          <p class="muted">Focus, speed of learning, and measurable impact. Less theater, more pipeline.</p>
         </article>
         <article class="card">
-          <h3>Entrar a LatAm sin tropezar</h3>
-          <p class="muted">Secuencia país→*beachhead*→canales. Pricing, compliance y los primeros 10 logos.</p>
+          <h3>Industries</h3>
+          <p class="muted">SaaS, fintech, HR tech and SMB digitization. Early to growth stages.</p>
         </article>
       </div>
     </div>
   </section>
 
   <!-- Contacto -->
-  <section id="contacto">
+  <section id="contact">
     <div class="wrap">
       <div class="grid cols-2">
         <div class="card">
-          <h2>Hablemos</h2>
-          <p class="muted">Escribinos o reservá una intro de 20 minutos.</p>
+          <h2>Contact us</h2>
+          <p class="muted">Email us or book a 20‑minute intro.</p>
           <div class="chips" style="margin:8px 0 14px">
-            <span class="chip">Respuesta en 24 h</span>
-            <span class="chip">Idioma: ES / EN</span>
+            <span class="chip">24h response</span>
+            <span class="chip">Languages: EN / ES</span>
           </div>
           <div class="chips">
-            <a class="btn" id="mailBtn" href="mailto:hola@tudominio.com">Enviar correo</a>
+            <a class="btn" id="mailBtn" href="mailto:hola@tudominio.com">Email us</a>
             <a class="btn ghost" id="waBtn" href="https://wa.me/5491100000000" target="_blank" rel="noreferrer">WhatsApp</a>
-            <a class="btn ghost" id="calBtn" href="#" target="_blank" rel="noreferrer">Agendar en Calendly</a>
+            <a class="btn ghost" id="calBtn" href="#" target="_blank" rel="noreferrer">Book via Calendly</a>
           </div>
         </div>
         <div class="card">
-          <h2>Datos legales</h2>
-          <p class="muted">Tu Consultora SRL · CUIT 30-00000000-0 · Buenos Aires, AR.</p>
-          <p class="muted">Trabajamos con contratos de confidencialidad y *data processing* bajo estándares internacionales.</p>
+          <h2>Legal</h2>
+          <p class="muted">Your Firm LLC · City, Country.</p>
+          <p class="muted">We work under NDA and data processing agreements aligned to international standards.</p>
         </div>
       </div>
     </div>
   </section>
 
   <footer>
-    <div class="wrap">© <span id="year"></span> <span id="brand2">Tu Consultora</span>. Todos los derechos reservados.</div>
+    <div class="wrap">© <span id="year"></span> <span id="brand2">Tu Consultora</span>. All rights reserved.</div>
   </footer>
 
   <script>
     // Personalización rápida
-    const BRAND = 'Tu Consultora';
+    const BRAND = 'Your Firm';
     const EMAIL = 'hola@tudominio.com';
     const WHATSAPP = 'https://wa.me/5491100000000';
     const CAL = '#'; // Pegá tu enlace de Calendly/Oncehub
@@ -283,7 +287,7 @@
       })
     },{rootMargin:'-40% 0px -55% 0px', threshold:[0,1]});
 
-    ['servicios','casos','insights','contacto','gtm','revops','reuniones','latam','capital'].forEach(id=>{
+    ['services','case-studies','about','contact','gtm','revops','meetings','latam','capital'].forEach(id=>{
       const el = document.getElementById(id);
       if(el) io.observe(el);
     });
