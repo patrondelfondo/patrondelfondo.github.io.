@@ -10,17 +10,18 @@
   <meta property="og:type" content="website" />
   <style>
     :root{
-      /* Paleta sobria, editorial */
-      --bg:#ffffff;         /* fondo */
-      --ink:#0b1220;        /* texto principal */
-      --muted:#5b667a;      /* texto secundario */
-      --line:#e6eaf1;       /* líneas / bordes */
-      --brand:#0a3a66;      /* azul profundo */
-      --brand-2:#0f5da3;    /* azul acento */
-      --chip:#f2f6fb;       /* fondo chips */
+      /* Paleta sobria, editorial (bone + celeste oscuro) */
+      --bg:#F7F3EE;        /* blanco hueso */
+      --ink:#0F5DA3;       /* celeste oscuro (texto principal) */
+      --muted:#5D7FA8;     /* texto secundario, azulado suave */
+      --line:#DFE7F3;      /* líneas / bordes claras */
+      --brand:#0F5DA3;     /* azul/celeste profundo para acentos */
+      --brand-2:#5AA7E3;   /* acento claro */
+      --chip:#EEF5FB;      /* fondo chips */
     }
     @media (prefers-color-scheme: dark){
-      :root{--bg:#0b0f14;--ink:#e9eef7;--muted:#9aa6ba;--line:#1e293b;--chip:#142030}
+      /* Mantener identidad en modo dark (sin fondo negro) */
+      :root{--bg:#F7F3EE;--ink:#0F5DA3;--muted:#5D7FA8;--line:#DFE7F3;--chip:#EEF5FB}
     }
     *{box-sizing:border-box}
     html,body{margin:0;padding:0;background:var(--bg);color:var(--ink)}
